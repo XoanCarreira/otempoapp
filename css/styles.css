@@ -1,0 +1,233 @@
+/* Reset estilos */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    /* background: linear-gradient(rgb(70, 168, 248), rgb(21, 21, 221)); */
+    background-color: #1d1e20f5;
+}
+
+body,
+input,
+button {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Estilos xerais */
+body {
+    min-height: 100vh;
+    width: 100%;
+    /* background-image: url("../assets/fondo_xeo.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.espaciador__100 {
+    height: 100px;
+}
+
+
+/* Estilos header */
+.header {
+    min-height: 80px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 10%;
+}
+
+.header__buscador{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header__localidade {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0 0 5px black;
+    box-shadow: 0 0 10px 10px #fff;
+}
+
+.header__buscar {
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10px #fff;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: transparent;
+    font-weight: 800;
+}
+
+.header__choiva {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    display: none;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/* Estilos main */
+.main {
+    margin: 0 auto;
+    padding: 15px;
+    min-height: 90vh;
+}
+
+/*Previsións para hoxe*/
+.main__hoxe {
+    /* border: 2px solid black; */
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: rgba(58, 144, 214, 0.76);
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px rgb(0, 0, 0), -10px 10px 10px rgba(0, 0, 0, 0.603);
+
+}
+
+.hoxe__ubicacion,
+.hoxe__data {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-block-end: 10px;
+}
+
+.hoxe__ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.hoxe__tempo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hoxe__icono {
+    width: 150px;
+}
+
+.hoxe__descripcion {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.hoxe__temperaturas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.hoxe__temperatura {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hoxe__maxmin {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.hoxe__min {
+    color: blue;
+}
+
+.hoxe__max {
+    color: rgb(187, 19, 19);
+}
+
+/*Previsións próximos días*/
+.main__previsions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.previsions__dias {
+    width: 120px;
+    height: 200px;
+    background-color: rgba(58, 144, 214, 0.76);
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px rgb(0, 0, 0), -10px 10px 10px rgba(0, 0, 0, 0.603);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.previsions__data {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.previsions__icono {
+    width: 50px;
+}
+
+.previsions__min {
+    color: blue;
+    font-weight: 700;
+}
+
+.previsions__max {
+    color: rgb(187, 19, 19);
+    font-weight: 700;
+}
+
+
+/* Mapa */
+
+/* .main__mapa{
+    display: flex;
+} */
+
+#map{
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    background: #fff;
+}
+
+/*Footer*/
+.footer {
+    background-color: #000;
+    color: #fff;
+    /* position: fixed;
+    bottom: 0; */
+    width: 100%;
+}
+
+.footer__p {
+    text-align: center;
+}
