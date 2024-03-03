@@ -1,20 +1,14 @@
-let lat;
-let lon;
+const apiKey = ENV.API_KEY;
 
 
 //API de OpenWeather
 
-// const apiKey = "e28f230758f15fbf4a9b66b5ebaa05fa";
+let lat;
+let lon;
 
-const apikey = API_KEY;
 const localidade = document.getElementById("localidade");
 
-
-
 // console.log(localidade.value);
-
-
-
 
 
 
